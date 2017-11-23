@@ -254,6 +254,36 @@ namespace imagenBdCsharp
             }
         }
 
+        //boton guardar imagen a archivo
+        private void button5_Click(object sender, EventArgs e)
+        {
+            //SaveFileDialog saveImg = new SaveFileDialog();
+            //saveImg.Filter = "JPEG(*.JPG)|*.JPG|BMP(*.BMP)|*.BMP";
+            //Image Imagen =  pictureBox1.BackgroundImage;
+            //saveImg.ShowDialog();
+            //Imagen.Save(saveImg.FileName);
+
+            using (SaveFileDialog sfdlg = new SaveFileDialog())
+            {
+                sfdlg.Title = "Save Dialog";
+                sfdlg.Filter = "JPEG(*.JPG)|*.JPG|BMP(*.BMP)|*.BMP|PNG(*.PNG)|*.PNG";
+
+                if (sfdlg.ShowDialog(this) == DialogResult.OK)
+                {
+                    using (Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height))
+                    {
+                        pictureBox1.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
+                        // pictureBox1.Image = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+                        pictureBox1.Image = pictureBox1.BackgroundImage;
+                        //pictureBox1.Image.Save("c://cc.Jpg");
+                        bmp.Save(sfdlg.FileName);
+                        MessageBox.Show("Saved Successfully.....");
+
+                    }
+                }
+            }
+        }
+
 
 
     }//// end class
