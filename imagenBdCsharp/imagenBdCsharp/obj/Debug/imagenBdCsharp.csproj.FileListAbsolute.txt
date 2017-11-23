@@ -1,0 +1,9 @@
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\bin\Debug\imagenBdCsharp.exe.config
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\bin\Debug\imagenBdCsharp.exe
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\bin\Debug\imagenBdCsharp.pdb
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.csprojResolveAssemblyReference.cache
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.Form1.resources
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.Properties.Resources.resources
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.csproj.GenerateResource.Cache
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.exe
+c:\users\erik\documents\visual studio 2012\Projects\imagenBdCsharp\imagenBdCsharp\obj\Debug\imagenBdCsharp.pdb
