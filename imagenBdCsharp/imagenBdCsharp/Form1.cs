@@ -277,11 +277,29 @@ namespace imagenBdCsharp
                         pictureBox1.Image = pictureBox1.BackgroundImage;
                         //pictureBox1.Image.Save("c://cc.Jpg");
                         bmp.Save(sfdlg.FileName);
-                        MessageBox.Show("Saved Successfully.....");
+                        MessageBox.Show("Saved Successfully.....");                        
 
                     }
                 }
             }
+        }
+
+        //boton imrpimir imagen 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            PrintDialog print = new PrintDialog();
+            if (print.ShowDialog() == DialogResult.OK)
+            {
+                printDocument1.PrinterSettings = print.PrinterSettings;
+                printDocument1.Print();
+
+            }
+        }
+
+        //evento para imprimir pagina
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(pictureBox1.Image,pictureBox1.Location.X,pictureBox1.Location.Y,pictureBox1.Width,pictureBox1.Height);
         }
 
 
